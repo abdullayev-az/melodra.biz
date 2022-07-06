@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+html{
+
+    overflow-x: hidden;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+.top-main{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+.biz-background{
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/biiz-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.topbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(156, 156, 156);
+}
+.topbar span{
+    color: #3E3737;
+}
+.topbar .icons img{
+    margin-left: 10px;
+}
+.navbarr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.navbarr .nav-texts ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0;
+}
+.offcanvas-texts{
+    display: none;
+}
+.navbarr .hamburger{
+    display: none;
+}
+.navbarr .nav-texts ul li a{
+    margin-left: 0 10px;
+    padding: 10px 20px;
+    color: #3E3737;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+}
+.navbarr .nav-texts ul li a img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+}
+.navbarr .nav-texts ul li a:hover{
+    border-radius: 5px;
+    background-color: #91B40D;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #fff;
+}
+.navbarr .nav-texts ul li:nth-child(2) a{
+    background-color: #91B40D;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.navbarr .nav-texts ul li:nth-child(2) a img{
+    opacity: 1;
+}
+.navbarr .nav-texts ul li a .search{
+    opacity: 1;
+    position: relative;
+    bottom: 3px;
+    right: 10px;
+}
+.navbarr .nav-texts ul li:nth-child(7) a:hover{
+    background: #fff;
+}
+.navbarr .nav-texts ul li a:hover > img{
+    opacity: 1;
+}
+.plant{
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    justify-content: end;
+}
+.bag{
+    width: 100%;
+    position: relative;
+}
+.bag::before{
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 140px;
+    top: 0;
+    right: 0;
+    background: url(../image/Group\ 445.png);
+    background-repeat: no-repeat;
+}
+.bag::after{
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 140px;
+    top: 155px;
+    right: 0;
+    background: url(../image/Group\ 444.png);
+    background-repeat: no-repeat;
+}
+.bag h1{
+    font-family: serif;
+}
+.bag1 h1,p{
+    color: #918F8F;
+    font-family: serif;
+}
+.bag1 h1:nth-child(1){
+    font-size: 5em;
+}
+.bag1-img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    background-color: #F3F3F3;
+    padding-top: 13rem;
+    position: relative;
+}
+.footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30vh;
+    background: url(../image/Screen\ Shot\ 2021-12-22\ at\ 00.25.02.png);
+    background-size: cover;
+}
+.foter-logo{
+    width: 200px;
+    margin-bottom: 20px;
+}
+.foter-menyu li{
+    list-style: none;
+    margin-top: 10px;
+}
+.foter-menyu li a{
+    text-decoration: none;
+    color: black;
+}
+.foter-menyu li:first-child a{
+    font-weight: 600;
+}
+.copyright p{
+    color: black;
+    margin-bottom: 0;
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and  (max-width: 991px) {
+    .navbarr .nav-texts ul li a{
+        padding: 10px;
+    }
+    .bag::before{
+        content: '';
+        position: absolute;
+        width: 450px;
+        height: 140px;
+        top: 0;
+        right: 0;
+        background: 0 0;
+        background-repeat: no-repeat;
+    }
+    .bag::after{
+        content: '';
+        position: absolute;
+        width: 450px;
+        height: 140px;
+        top: 155px;
+        right: 0;
+        background: 0 0;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+@media only screen and  (max-width: 769px){
+    .top-main{
+        height: 80vh;
+        overflow: hidden;
+    }
+    .biz-background{
+        height: 60vh;
+    }
+    .plant{
+        display: none;
+    }
+    .topbar{
+        display: none;
+    }
+    .navbarr{
+        padding-top: 1rem;
+        overflow-x: hidden;
+    }
+    .navbarr .nav-texts{
+        display: none;
+    }
+    .navbarr .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .navbarr .hamburger .hamburger-line{
+        width: 40px;
+        height: 3px;
+        background-color: #91B40D;
+        margin-top: 8px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+    .offcanvas-texts{
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: rgba(128, 128, 128, 0.24);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 100vh;
+        z-index: 12;
+        padding: 20px;
+        transform: translateX(320px);
+        transition-delay: 0.8s;
+        -webkit-transform: translateX(320px);
+        -moz-transform: translateX(320px);
+        -ms-transform: translateX(320px);
+        -o-transform: translateX(320px);
+}
+    .offclose div{
+        width: 30px;
+        height: 2px;
+        background: #91B40D;
+        margin-bottom: 3px;
+    }
+    .offcanvas-texts ul{
+        list-style: none;
+        padding-left: 0;
+    }
+    .offcanvas-texts ul li{
+        margin-top: 10px;
+    }
+    .offcanvas-texts ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-family: serif;
+        letter-spacing: 1px;
+    }
+    .offcanvas-texts ul li a:hover{
+        color: #91B40D;
+    }
+    .texts .img-text{
+        width: 100%;
+    }
+    .text-img img{
+        height: 13px;
+    }
+    .bag1 h1:nth-child(1){
+        font-size: 3em;
+    }
+    .copyright p{
+        text-align: center;
+     }
+
+   
+}
+
+
+@media only screen and  (max-width: 576px){
+    .topbar .icons img{
+        margin-left: 5px;
+    }
+    .top-main{
+        height: 60vh;
+    }
+    .biz-background{
+        height: 38vh;
+    }
+    .plant img{
+        display: none;
+    }
+    .row2{
+        flex-direction: column-reverse;
+    }
+}
